@@ -1,5 +1,6 @@
  libraries {
      lib('Santu_SharedLibraries')
+     welcomeJob 'lambdatest'
  }
 
 pipeline {
@@ -7,8 +8,8 @@ pipeline {
     stages {
        stage('Testing') {
         steps {
-          echo 'Hello world'
-          welcomeJob 'lambdatest'
+          echo "Welcome, ${name}."
+          
         }
        }
     }
