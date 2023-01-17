@@ -1,14 +1,13 @@
- libraries {
-     lib('Santu_SharedLibraries')
-     welcomeJob 'lambdatest'
- }
+
+@Library('Santu_SharedLibraries') _
+
 
 pipeline {
     agent any
     stages {
        stage('Testing') {
         steps {
-          echo "Welcome, ${name}."
+          welcomeJob("Santu!")
           
         }
        }
