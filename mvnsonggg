@@ -1,0 +1,2 @@
+@Library('Santu_SharedLibraries') _
+mvn-sonrgg.groovy('https://github.com/abcdsantu/santu-appnew.git')
