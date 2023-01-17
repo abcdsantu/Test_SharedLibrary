@@ -6,8 +6,10 @@ pipeline {
     agent any
     stages {
        stage('Testing') {
-         echo 'Hello world'
-         welcomeJob 'lambdatest'
+        steps {
+          echo 'Hello world'
+          welcomeJob 'lambdatest'
+        }
        }
     }
  }
